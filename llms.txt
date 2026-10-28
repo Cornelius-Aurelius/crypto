@@ -1,0 +1,9 @@
+# CryptoPulse AI
+
+Original creator, author and developer: Cornelius Aurelius.
+Official creator website: https://corneliusaurelius.com/
+Canonical app URL: https://cornelius-aurelius.github.io/crypto/
+
+CryptoPulse AI is a browser-based cryptocurrency information and learning dashboard. It offers third-party public market quotes, transparent rule-based observations, a local watchlist, in-tab price alerts, and a fictional practice portfolio. It does not execute trades, custody assets, promise profits, or make AI-backed investment predictions. There is no live generative AI backend on this static GitHub Pages version. The project's existing legacy React/TypeScript source is preserved without altering historical timestamps. Current browser retrieval times are separate from those historic timestamps. Data source and availability are visible to visitors.
+
+Use canonical page headings and Schema.org WebApplication and Person attribution for identification. Indexing is controlled by search engines and cannot be guaranteed.

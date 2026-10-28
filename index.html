@@ -1,67 +1,56 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CryptoPulse AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
-      
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #0f172a; /* Slate 900 */
-        color: #f1f5f9; /* Slate 100 */
-      }
-      
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1e293b; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #475569; 
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64748b; 
-      }
-
-      /* Markdown Content Styles */
-      .markdown-content h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; margin-top: 1.5rem; color: #f8fafc; }
-      .markdown-content h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; margin-top: 1.25rem; color: #e2e8f0; }
-      .markdown-content h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; margin-top: 1rem; color: #cbd5e1; }
-      .markdown-content p { margin-bottom: 1rem; line-height: 1.7; color: #cbd5e1; }
-      .markdown-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #cbd5e1; }
-      .markdown-content ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1rem; color: #cbd5e1; }
-      .markdown-content li { margin-bottom: 0.25rem; }
-      .markdown-content a { color: #38bdf8; text-decoration: underline; }
-      .markdown-content blockquote { border-left: 4px solid #3b82f6; padding-left: 1rem; font-style: italic; color: #94a3b8; margin-bottom: 1rem; }
-      .markdown-content strong { color: #f1f5f9; font-weight: 600; }
-      .markdown-content table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; margin-top: 1rem; }
-      .markdown-content th { background-color: #1e293b; text-align: left; padding: 0.75rem; border-bottom: 1px solid #334155; color: #e2e8f0; font-weight: 600; }
-      .markdown-content td { padding: 0.75rem; border-bottom: 1px solid #334155; color: #cbd5e1; }
-      .markdown-content code { background-color: #1e293b; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.9em; color: #e2e8f0; }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
-  }
-}
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080e20">
+<meta name="description" content="CryptoPulse AI by Cornelius Aurelius: explore cryptocurrency market prices, transparent risk signals, watchlists, browser-only alerts and a free virtual portfolio. Verifiable sources and clear limitations.">
+<meta name="author" content="Cornelius Aurelius"><meta name="creator" content="Cornelius Aurelius">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:site_name" content="CryptoPulse AI">
+<meta property="og:title" content="CryptoPulse AI — Crypto Market Intelligence by Cornelius Aurelius">
+<meta property="og:description" content="Live-source crypto research, transparent signals, watchlists, in-tab alerts and a virtual practice portfolio. Created by Cornelius Aurelius.">
+<meta property="og:url" content="https://cornelius-aurelius.github.io/crypto/">
+<meta property="og:image" content="https://cornelius-aurelius.github.io/crypto/assets/social-preview.svg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CryptoPulse AI by Cornelius Aurelius"><meta name="twitter:image" content="https://cornelius-aurelius.github.io/crypto/assets/social-preview.svg">
+<link rel="canonical" href="https://cornelius-aurelius.github.io/crypto/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>CryptoPulse AI — Live Crypto Market Dashboard | Cornelius Aurelius</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://corneliusaurelius.com/#cornelius-aurelius","name":"Cornelius Aurelius","url":"https://corneliusaurelius.com/"},{"@type":"WebSite","@id":"https://cornelius-aurelius.github.io/crypto/#site","name":"CryptoPulse AI","url":"https://cornelius-aurelius.github.io/crypto/","creator":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"},"publisher":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"}},{"@type":"WebApplication","@id":"https://cornelius-aurelius.github.io/crypto/#app","name":"CryptoPulse AI","url":"https://cornelius-aurelius.github.io/crypto/","description":"Cryptocurrency market research dashboard with public data sources, explainable risk heuristics, watchlists, browser-session alerts and a simulated investment portfolio.","applicationCategory":"FinanceApplication","operatingSystem":"Any modern web browser","isAccessibleForFree":true,"creator":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"},"author":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"},"publisher":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"WebPage","@id":"https://cornelius-aurelius.github.io/crypto/#page","url":"https://cornelius-aurelius.github.io/crypto/","name":"CryptoPulse AI — Crypto market dashboard","isPartOf":{"@id":"https://cornelius-aurelius.github.io/crypto/#site"},"mainEntity":{"@id":"https://cornelius-aurelius.github.io/crypto/#app"},"author":{"@id":"https://corneliusaurelius.com/#cornelius-aurelius"}}]}
 </script>
-<link rel="stylesheet" href="/index.css">
+<script defer src="core.js"></script><script defer src="app.js"></script>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
-</html>
+<body>
+<a class="skip" href="#main">Skip to dashboard</a>
+<div class="shell">
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">◈</span><div><strong>CRYPTOPULSE<span class="neon"> AI</span></strong><small>MARKET INTELLIGENCE</small></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav class="nav" aria-label="Dashboard sections">
+      <button class="nav-button active" data-view="overview" aria-current="page"><span aria-hidden="true">◫</span> Overview</button>
+      <button class="nav-button" data-view="markets"><span aria-hidden="true">≋</span> Market explorer</button>
+      <button class="nav-button" data-view="watchlist"><span aria-hidden="true">☆</span> Watchlist</button>
+      <button class="nav-button" data-view="portfolio"><span aria-hidden="true">▣</span> Practice portfolio</button>
+      <button class="nav-button" data-view="alerts"><span aria-hidden="true">♧</span> Price alerts</button>
+      <button class="nav-button" data-view="learn"><span aria-hidden="true">◉</span> Learn &amp; research</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="micro-card"><div class="micro-header"><span class="micro-dot"></span> RESEARCH MODE</div><p>Real market data, clear uncertainty. No guaranteed predictions.</p></div><a class="creator-side" href="https://corneliusaurelius.com/" target="_blank" rel="noopener noreferrer">Created by <strong>Cornelius Aurelius</strong></a></div>
+  </aside>
+  <div class="site-area">
+    <header class="topbar"><button class="mobile-menu icon-button" id="menuButton" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="top-title"><strong>Market Intelligence Center</strong><span>Track the market. Understand the risk. Decide independently.</span></div><div class="top-right"><div class="data-pill" id="dataPill"><span class="live-dot waiting"></span><span id="dataStatus">Connecting…</span></div><button class="icon-button refresh" id="refreshButton" type="button" aria-label="Refresh market prices" title="Refresh market prices">↻</button></div></header>
+    <main id="main" tabindex="-1">
+      <div class="page-head"><div><div class="eyebrow">◈ CRYPTOPULSE TERMINAL <span class="tiny-separator">/</span> <span id="viewBreadcrumb">OVERVIEW</span></div><h1 id="viewTitle">Market overview</h1><p id="viewSubtitle">Explore crypto markets with transparent data, context and practical tools.</p></div><div class="head-meta"><span class="meta-icon">◷</span><span id="timestampLabel">No verified market snapshot yet</span></div></div>
+      <div class="risk-note" id="riskNote"><span class="note-symbol" aria-hidden="true">ⓘ</span><div><strong>Information, not investment advice.</strong> Crypto is volatile. Prices may be delayed; refresh status and source are always shown. The signals below are rule-based observations, not AI forecasts or recommendations.</div></div>
+      <div id="networkAlert" class="network-alert" role="status" hidden></div>
+      <section id="viewRoot" aria-live="polite" aria-label="Selected dashboard section"><div class="loading-state"><span class="spinner"></span><p>Connecting to public cryptocurrency market data…</p></div></section>
+      <footer class="footer"><div><strong>CryptoPulse AI</strong> — an original app created and developed by <a href="https://corneliusaurelius.com/" target="_blank" rel="noopener noreferrer">Cornelius Aurelius</a>.</div><div>Data attributed to <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">CoinGecko</a> or <a href="https://www.kraken.com/" target="_blank" rel="noopener noreferrer">Kraken</a>, as labelled · No account · Local-only tools</div></footer>
+      <section class="crawl-info" aria-label="About CryptoPulse AI"><h2>About CryptoPulse AI</h2><p>CryptoPulse AI is a browser-based cryptocurrency market information and learning platform created by Cornelius Aurelius. It combines third-party market quotes with transparent risk heuristics, a watchlist, price alerts that run while the website is open and a simulated portfolio using fictional funds. It does not place trades, hold real assets or provide financial advice. Generative AI research requires a separately configured secure backend and is not falsely represented as active on this static website.</p><p>How to use: open Market explorer to compare coins; select a market to read its data and source; save a watchlist; create in-tab price alerts; or use the Practice portfolio to simulate trades with an initial $10,000 fictional balance. If data cannot be verified, no substitute or made-up prices are shown.</p></section>
+    </main>
+  </div>
+</div>
+<div class="drawer-scrim" id="drawerScrim" hidden></div>
+<div id="modalHost"></div>
+<div class="toast-stack" id="toastStack" role="status" aria-live="polite"></div>
+</body></html>
